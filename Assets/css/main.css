@@ -1,0 +1,83 @@
+:root {
+    --pink: #e8328a;
+    --lightpink: #e8328a8f;
+    --darkblue: #2d263d;
+    --darkpink: #582840;
+    --naturalblue: #56287b;
+}
+
+body {
+    background: linear-gradient(0deg, var(--darkblue) 0%, var(--darkpink) 100%);
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: lighten;
+}
+
+body h1 {
+    font-size: 30px;
+}
+
+.content {
+    position: relative;
+    top: 25vh;
+}
+
+.forget-password a {
+    color: var(--pink) !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form .btn-mania {
+    background: var(--pink);
+    border-radius: 50px;
+    border: none;
+    font-size: 1.4rem;
+}
+
+
+form .btn-mania:hover {
+    background: var(--lightpink);
+}
+
+nav img {
+    width: 150px;
+}
+body .back-home {
+    position: absolute;
+    top: -70%;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    border-radius: 50%;
+    padding: 0px 0px 0px 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+.back-home:hover {
+    color: var(--lightpink);
+    transform: scale(1.4);
+}
+#spinner {
+    border: 15px solid var(--lightpink);
+    border-top: 15px solid var(--pink);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    top: 35vh;
+    left: 48%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

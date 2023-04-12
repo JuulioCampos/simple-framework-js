@@ -1,0 +1,27 @@
+<h1 class="text-center text-white">Bem vindos ao PORTAL DE VENDAS</h1>
+<form id="loginForm" class="m-0 form-control row bg-transparent border-0 justify-content-center d-flex">
+    <div class="grid-form col-12 col-md-9 col-lg-7 col-xl-4 bg-transparent ">
+        <div class="mb-3 text-white">
+            <label for="email-input" class="form-label">E-mail</label>
+            <input type="email" name="email" class="form-control" id="email-input" placeholder="" required>
+        </div>
+        <div class="mb-3 text-white">
+            <label for="password-input" class="form-label">Senha</label>
+            <input type="password" name="password" class="form-control" id="password-input" placeholder="" required>
+        </div>
+        <div class="content-footer d-flex justify-content-between">
+            <div class="check-remember">
+                <input type="checkbox" name="remember" id="remember">
+                <label class="text-white" for="remember">Lembrar senha</label>
+            </div>
+            <div class="forget-password">
+                <a onclick="Render('Login/recoveryPassword')" class="text-white" id="recovery">Esqueci minha
+                    senha</a>
+            </div>
+        </div>
+        <div class="my-3 text-white">
+            <button type="submit" class="form-control btn-mania text-white text-center" value="Acessar conta">Acessar
+                conta </button>
+        </div>
+    </div>
+</form>
